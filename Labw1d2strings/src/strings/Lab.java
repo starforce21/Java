@@ -42,6 +42,7 @@ public class Lab {
 		}
 		System.out.println("Number of Vowels: "+ cVows);
 		System.out.println("Number of Consonants: "+ cCons);
+		scan.close();
 	}
 
 }
