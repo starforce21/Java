@@ -29,14 +29,14 @@ public class Person implements PersonInterface{
 		Student stu1=new Student(inputAge,inputName,inputCohort);
 		stu1.display();
 		Person1 p1=new Person1(inputAge,inputName);
-		System.out.println("Enter Height in cm and Weight in kg for this person :");
+		System.out.println("Enter Height in cm and Weight in kg for this student :");
 		int inputHeight=scan.nextInt();
 		int inputWeight=scan.nextInt();
 		scan.nextLine();
 		p1.setHeight(inputHeight);
 		p1.setWeight(inputWeight);
 		System.out.println(p1.name+" is "+p1.getHeight()+" cm tall and "+p1.getWeight()+" kg heavy.");
-		System.out.println("That is "+p1.calculate(p1.getWeight())+"in pounds");
+		System.out.println("That is "+p1.calculate(p1.getWeight())+" in pounds");
 		System.out.println("Employee 1 have a expected net worth of "+emp1.wealth(emp1.age,emp1.salary));
 		System.out.println("All these people are from "+organization);
 	}
@@ -47,7 +47,7 @@ public class Person implements PersonInterface{
 	public double calculate(int value)
 	{	
 		double lbs=value*2.2046226218;
-		return Math.round(lbs);
+		return (double)(Math.round(lbs*100))/100;
 	}
 	public double wealth(int age,int salary)
 	{	
