@@ -1,12 +1,8 @@
 package hw5;
 
-public class Person1 extends Person{
+public class Person1{
 	private int height;
 	private int weight;
-	public Person1(int age,String name)
-	{
-		super(age,name);
-	}
 	public int getHeight() {
 		return height;
 	}

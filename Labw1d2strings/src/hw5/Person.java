@@ -3,6 +3,10 @@ import java.util.Scanner;
 public class Person implements PersonInterface{
 	int age;
 	String name;
+	public Person()
+	{
+		
+	}
 	public Person(int age,String name)
 	{
 		this.age=age;
@@ -28,15 +32,16 @@ public class Person implements PersonInterface{
 		inputName=scan.nextLine();
 		Student stu1=new Student(inputAge,inputName,inputCohort);
 		stu1.display();
-		Person1 p1=new Person1(inputAge,inputName);
+		Person1 p1=new Person1();
 		System.out.println("Enter Height in cm and Weight in kg for this student :");
 		int inputHeight=scan.nextInt();
 		int inputWeight=scan.nextInt();
 		scan.nextLine();
 		p1.setHeight(inputHeight);
 		p1.setWeight(inputWeight);
-		System.out.println(p1.name+" is "+p1.getHeight()+" cm tall and "+p1.getWeight()+" kg heavy.");
-		System.out.println("That is "+p1.calculate(p1.getWeight())+" in pounds");
+		Person per1=new Person();
+		System.out.println("This student is "+p1.getHeight()+" cm tall and "+p1.getWeight()+" kg heavy.");
+		System.out.println("That is "+per1.calculate(p1.getWeight())+" in pounds");
 		System.out.println("Employee 1 have a expected net worth of "+emp1.wealth(emp1.age,emp1.salary));
 		System.out.println("All these people are from "+organization);
 	}
