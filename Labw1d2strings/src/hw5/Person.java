@@ -38,6 +38,7 @@ public class Person implements PersonInterface{
 		System.out.println(p1.name+" is "+p1.getHeight()+" cm tall and "+p1.getWeight()+" kg heavy.");
 		System.out.println("That is "+p1.calculate(p1.getWeight())+"in pounds");
 		System.out.println("Employee 1 have a expected net worth of "+emp1.wealth(emp1.age,emp1.salary));
+		System.out.println("All these people are from "+organization);
 	}
 	void display() 
 	{
