@@ -15,5 +15,5 @@ public class Person1{
 	public void setWeight(int weight) {
 		this.weight = weight;
 	}
-	
+	//test
 }
